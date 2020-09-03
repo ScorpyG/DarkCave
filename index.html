@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"> <!--Linking css file to the webpage-->
-    <script src="https://kit.fontawesome.com/6b054b6d80.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="https://i.imgur.com/6ZLFKun.png">
-    <title> Dark Cave</title>
+    <script src="https://kit.fontawesome.com/6b054b6d80.js" crossorigin="anonymous"></script> <!--Importing icons file from 'FontAwsome'-->
+    <link rel="icon" href="https://i.imgur.com/6ZLFKun.png"> <!--Webpage Initial-->
+    <title> Dark Cave</title> <!--Webpage Title-->
 </head>
   
 <body>
-    <div class="hero-image"> <!--Introduction segment-->
+    <!----------------------------Introduction segment---------------------------->
+    <div class="hero-image"> 
         <div class="hero-text">
             <h1 style= "font-size: 50px;">I am Justin Hoang </h1>
             <p style= "font-size: 25px;">I'm a Developer.</p>
@@ -19,44 +20,44 @@
         </div>
     </div>
 
-    <div class="topnav">
+    <div class="topnav" id="myTopNav">
         <ul>
             <li><a href="#about-me"><i class="fa fa-fw fa-user"></i> About Me</a></li>
             <li><a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a></li>
             <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contacts</a></li>
+            <li><a href="" class="toggle-btn"><i class="fas fa-bars"></i></a></li>
         </ul>
     </div>
 
-    <!-------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------------------------------> 
     <!--Section for your personal description and #resume-->
     <section class="section1" id="about-me">
         <div class="container">
-            <h1 style="font-size: 35px;">About Me</h1>
-            <p>My name is Justin Hoang. I'm a developer seeking for an opportunity for advancing
+            <h1 style="font-size: 35px;"><u>About Me</u></h1>
+            <p style="font-size: 20px;">My name is Justin Hoang. I'm a developer seeking for an opportunity for advancing
                 my knowledge and skills within the I.T world. I'm passinate about computer and 
                 love to share my ideas for an innovative world.</p> 
-            <p>I have the foundation levels of programming languages like <em>C++, C# and Python</em> with some extensive
+            <p style="font-size: 20px;">I have the foundation levels of programming languages like <em>C++, C# and Python</em> with some extensive
                 experience with front-end languages like <em>HTML, CSS</em> and <em>JavaScript</em>.</p>
 
             <a href="https://docs.google.com/document/d/1w6tVPcjRbQg_I0yuJbuSQobvcM_qxNI-Q5bbyR1ct9M/edit?usp=sharing" target="_blank">
                 <button><b>#Resume</b></button>
             </a>
         </div>
-          
     </section>
 
-    <!--------------------------------------------------------------------> 
+    <!---------------------------------------------------------------------------------------------------------------------------------------------> 
     <section class="section_seperator">
-        <img src="bg/ghost.gif" alt="small gif">
+        <img src="bg/ghost.gif" alt="small gif"> 
     </section>
 
-    <!--------------------------------------------------------------------> 
+    <!--------------------------------------------------------------------------------------------------------------------------------------------->  
     <!--Section to display your personal built projects-->   
     <section class="section2" id="projects"> 
         <div class="container">
-            <h1 style="font-size: 35px;">Projects</h1>
+            <h1 style="font-size: 35px;"><u>Projects</u></h1>
 
-            <!----------Project #1---------->
+            <!---------------------Project #1--------------------->
             <h3>- GUESS THE NUMBER -</h3>
             <p>The program was created using <b><em><u>Python</u></em></b> coding language. With simple algorithm and 
                 repetition and random number generator (RNG) designed for the players to guess the random number within a specific  
@@ -64,20 +65,20 @@
                 the correct answer. 
             </p>
             
-            <p>The program introducting many different elements and emphasis the basic <b><em><u>concepts</u></em></b> 
+            <p>The project introduces many different elements and emphasis the basic <b><em><u>concepts</u></em></b> 
                 of programming to beginners. Like buidling <b>code structures, repetition, conditioning, 
-                coding standards, navigating through terminal and reading command lines</b>. 
+                assigning variables, coding standards and navigating through terminal</b>. 
                 Simple but yet crucial factors for engineering and software developing
                 era.
             </p>
 
-            <a href="" target="_blank">
+            <a href="https://github.com/ScorpyG/Guess-the-Number" target="_blank">
             <button><b>Source Code!</b></button>
             </a>
 
             <hr id="break">
-            <!----------Project #2---------->
-            <h3>Project Name #2</h3>
+            <!---------------------Project #2--------------------->
+            <h3>- Project Name #2 -</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
                 cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
                 odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur,  
@@ -88,9 +89,10 @@
             <a href="" target="_blank">
             <button><b>Source Code!</b></button>
             </a>
+
             <hr id="break">
-            <!----------Project #3---------->
-            <h3>- Personal Porfolio -</h3>
+            <!---------------------Project #3--------------------->
+            <h3>- Project Name #3 -</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
                 cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
                 odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -104,16 +106,16 @@
         </div>
     </section>
 
-    <!--------------------------------------------------------------------> 
+    <!--------------------------------------------------------------------------------------------------------------------------------------------->  
     <section class="section_seperator">
         <img src="bg/rainbow.gif" alt="small gif">
     </section>
 
-    <!-------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------------------------------> 
     <!--Section for the viewer to get in-touch with the creator-->
     <section class="section3" id="contact">
         <div class="container">
-            <h1 style="font-size: 30px;">I'm ready!</h1>
+            <h1 style="font-size: 35px;"><u>I'm ready!</u></h1>
             <p>Be able to have the freedom to create and learn is something I always love. 
                 If you want to start a project, I'm all in!</p>
             <a href="mailto: justinhoang90@gmail.com" target="_blank">
@@ -123,7 +125,7 @@
     </section>
 
     <hr>
-    <!-------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------------------------------> 
     <!--footer with hyperlinked icons-->
     <footer> 
         <a href="#" class="to-top">
