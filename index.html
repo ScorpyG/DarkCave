@@ -20,13 +20,24 @@
     </div>
 
     <div class="topnav" id="myTopNav">
-        <ul>
-            <li><a href="#about-me"><i class="fa fa-fw fa-user"></i> About Me</a></li>
-            <li><a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a></li>
-            <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contacts</a></li>
-            <li><a href="" class="toggle-btn"><i class="fas fa-bars"></i></a></li>
-        </ul>
+        <a href="#about-me"><i class="fa fa-fw fa-user"></i> About Me</a>
+        <a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contacts</a>
+        <a href="javascript:void(0);" class="toggle-btn" onclick="toggleFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
+
+    <script>
+    function toggleFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
 
     <!---------------------------------------------------------------------------------------------------------------------------------------------> 
     <!--Section for your personal description and #resume-->
@@ -34,7 +45,7 @@
         <div class="container">
             <h1 style="font-size: 35px;"><u>About Me</u></h1>
             <p style="font-size: 20px;">My name is Justin Hoang. I'm a developer seeking for an opportunity for advancing
-                my knowledge and skills within the I.T world. I'm passionate about computer and 
+                my knowledge and skills within the I.T world. I'm passinate about computer and 
                 love to share my ideas for an innovative world.</p> 
             <p style="font-size: 20px;">I have the foundation levels of programming languages like <em>C++, C# and Python</em> with some extensive
                 experience with front-end languages like <em>HTML, CSS</em> and <em>JavaScript</em>.</p>
