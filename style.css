@@ -7,6 +7,17 @@ body, html {
     margin: 0;
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255)
+}
+
 /*------------------------------*/
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('bg/3.jpg');
@@ -15,8 +26,9 @@ body, html {
     background-size: cover;
 
     height: 100%;
+    width: 100%;
 
-    position: relative;
+    margin: auto;
 }
 
 .hero-text {
@@ -79,7 +91,6 @@ body, html {
 .topnav .toggle-btn {
     display: none;
 }
-
 /*--------------------------------------------*/
 .section3 {
     margin-bottom: 50px;
@@ -206,7 +217,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
+    .topnav a {
         display: none;
     }
     .topnav a.toggle-btn {
@@ -214,7 +225,7 @@ hr {
         display: block;
     }
     .section3 {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .media a {
         margin: 0px 8px 0px 8px;
@@ -223,9 +234,8 @@ hr {
         width: 100%;
     }
 }
-
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: fixed;}
     .topnav.responsive .toggle-btn {
         position: absolute;
         right: 0;

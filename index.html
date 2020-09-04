@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!--Linking css file to the webpage-->
     <script src="https://kit.fontawesome.com/6b054b6d80.js" crossorigin="anonymous"></script> <!--Importing icons file from 'FontAwsome'-->
     <link rel="icon" href="https://i.imgur.com/6ZLFKun.png"> <!--Webpage Initial-->
@@ -19,23 +19,24 @@
         </div>
     </div>
 
+    <!------------------------------Navigating bar-------------------------------->
     <div class="topnav" id="myTopNav">
         <a href="#about-me"><i class="fa fa-fw fa-user"></i> About Me</a>
         <a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a>
         <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contacts</a>
-        <a href="javascript:void(0);" class="toggle-btn" onclick="toggleFunction()">
+        <a href="javascript:void(0);" class="toggle-btn" onclick = "toggleFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
     <script>
     function toggleFunction() {
-        var x = document.getElementById("myTopNav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
+      var x = document.getElementById("myTopNav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
     </script>
 
