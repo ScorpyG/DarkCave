@@ -108,10 +108,22 @@ body, html {
 }
 
 .section1 h3:hover, .section2 h3:hover, .section3 h3:hover {
-    font-size: 26px;
-    word-spacing: 20px;
+    font-size: 24px;
+    word-spacing: 10px;
     color: rgb(255, 255, 255);
     transition-duration: .5s;
+}
+
+.high {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    transition-duration: 0.7s;
+}
+
+.high:hover {
+    font-size: 22px;
+    color: rgb(250,250,250);
+    transition-duration: 0.7s;
 }
 
 .section_seperator img {
