@@ -84,6 +84,8 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 7px;
     font-size: 20px;
     transition-duration: 1s;
 }
@@ -118,10 +120,14 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 .section3 .container h1 {
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
     font-size: 35px;
 }
 
-.section1 .container h1, .section2 .container h1{
+.section1 .container h1, .section2 .container h1 {
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     margin-top: 0px;
     padding-top: 60px;
@@ -131,12 +137,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
 }
 
-.section1 h3, .section2 h3, .section3 h3 {
+.section2 h3 {
     font-size: 23px;
     transition-duration: .5s;
 }
 
-.section1 h3:hover, .section2 h3:hover, .section3 h3:hover {
+.section2 h3:hover {
     word-spacing: 10px;
     color: rgb(255, 255, 255);
 }
