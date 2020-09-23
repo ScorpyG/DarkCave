@@ -218,6 +218,7 @@ body::-webkit-scrollbar-thumb {
 /*---------------Projects Showcase-------------------*/
 .prj_showcase {
     font-size: 18px;
+    width: 90%;
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
