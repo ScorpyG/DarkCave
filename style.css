@@ -2,7 +2,7 @@ body, html {
     background-color: rgb(38, 38, 38);
     font-family: monospace;
     line-height: 30px;
-    color: rgb(190, 190, 190);
+    color: rgb(220, 220, 220);
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -18,7 +18,7 @@ body::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255)
 }
 
-/*------------------------------*/
+/*------------------------Hero Image------------------------*/
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('bg/3.jpg');
     background-position: center;
@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
     }
 } 
 
-/*----------------Top Navigator--------------*/
+/*---------------------Top Navigator--------------------*/
 .topnav {
     margin: 0;
     padding: 0;
@@ -111,10 +111,15 @@ body::-webkit-scrollbar-thumb {
     word-spacing: 12px;
 }
 
+.topnav a.active {
+    background-color: white;
+    color: black;
+} 
+
 .topnav .toggle-btn {
     display: none;
-}
-/*--------------------------------------------*/
+} 
+/*----------------------Main page-----------------------*/
 .section3 p {
     font-size: 20px;
     margin: auto;
@@ -128,7 +133,7 @@ body::-webkit-scrollbar-thumb {
     width: 55%;
 }
 
-.section1, .section2 h1, .section3, .section4, .section_seperator {
+.section1, .section2 h1, .section3, .section4, .prj_showcase h1, .section_seperator {
     text-align: center;
 }
 .section3 .container h1 {
@@ -137,24 +142,25 @@ body::-webkit-scrollbar-thumb {
     font-size: 35px;
 }
 
-.section1 .container h1, .section2 .container h1 {
+.section1 h1, .section2 h1, .prj_showcase h1 {
     letter-spacing: 2px;
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     margin-top: 0px;
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 .section1 .container p {
     font-size: 20px;
 }
 
-.section2 h3 {
-    font-size: 23px;
+.section2 h3, .prj_showcase h3 {
+    text-align: center;
+    font-size: 21px;
     transition-duration: .5s;
 }
 
-.section2 h3:hover {
+.section2 h3:hover, .prj_showcase h3:hover {
     word-spacing: 10px;
     color: rgb(255, 255, 255);
 }
@@ -183,7 +189,7 @@ body::-webkit-scrollbar-thumb {
     height: 140px;
 }
 
-.section1 .container button, .section2 .container button, .section3 .container button, .section4 .container button {
+.container button, .card_info button {
     border: 3px solid rgb(38, 38, 38);
     
     text-align: center;
@@ -194,9 +200,10 @@ body::-webkit-scrollbar-thumb {
 
     cursor: pointer;
     transition-duration: .5s;
+
 }
 
-.section1 .container button:hover, .section2 .container button:hover, .section3 .container button:hover, .section4 .container button:hover {
+.container button:hover, .card_info button:hover {
     word-spacing: 15px;
     transition-duration: .5s;
     background-color: rgb(0, 0, 0);
@@ -208,22 +215,51 @@ body::-webkit-scrollbar-thumb {
     margin-top: 40px;
 }
 
-/*------------------------------*/
-.to-top i {
-    border-radius: 100%;
-    font-size: 30px;
-    color: rgb(100, 100, 100);
-    text-decoration: none;
-    margin: 15px;
+/*---------------Projects Showcase-------------------*/
+.prj_showcase {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.to-top i:hover, .media a:hover {
+.card_content {
+    padding: 15px;
+}
+
+.card_image {
+    width: 100%;
+    display: block;
+}
+
+.card_info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    border-radius: 4%;
+    background: rgba(100, 100, 100, 0.1);
+    box-shadow: 0 0 20px rgba(250, 250, 250, 0.1);
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(250, 250, 250, 0.9);
+    background: rgba(180, 180, 180, 0.6);
+    color: rgb(255, 255, 255);
+}
+
+/*-----------------------Footer----------------------*/
+.media a:hover {
     transition-duration: .5s;
     color: rgb(255, 255, 255);
 }
 
 .media {
-    margin: 20px 0px 30px 0px;
+    margin: 30px 0px 30px 0px;
     width: auto;
 }
 
@@ -243,6 +279,7 @@ footer {
     letter-spacing: 2px;
 }
 
+/*-------------------Random---------------------*/
 hr {
     margin-top: 50px;
     width: 55%;
@@ -261,6 +298,73 @@ hr {
     width: 40%;
 }
 
+#to-top-btn {
+    font-size: 30px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border: 3px solid rgb(38, 38, 38);
+    border-radius: 50%;
+
+    outline: none;
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    display: none;
+}
+
+#to-top-btn:hover, #to-top-btn:focus {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: white;
+}
+
+.btnEnter {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: enter_animation;
+}
+@keyframes enter_animation {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnExit {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: exit_animation;
+}
+
+@keyframes exit_animation {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+/*---------------------Responsive------------------*/
+@media screen and (max-width: 1200px) {
+    .prj_showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media screen and (max-width: 600px) {
     .topnav a {
         display: none;
@@ -305,5 +409,8 @@ hr {
         float: none;
         display: block;
         text-align: left;
+    }
+    .prj_showcase {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

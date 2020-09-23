@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css"> <!--Linking css file to the webpage-->
     <link rel="icon" href="https://i.imgur.com/6ZLFKun.png"> <!--Webpage Initial-->
     
-    <script src="script.js"></script> <!--JavaScript file-->
     <script src="https://kit.fontawesome.com/6b054b6d80.js" crossorigin="anonymous"></script> <!--Importing icons file from 'FontAwsome'-->
 
     <title> Dark Cave</title> <!--Webpage Title-->
 </head>
 
 <body>
+    <!-----------------------------Scoll to Top button----------------------------->
+    <button id="to-top-btn"><i class="fas fa-chevron-up"></i></button>
+
     <!----------------------------Introduction segment---------------------------->
     <div class="hero-image"> 
         <div class="hero-text">
@@ -27,9 +29,9 @@
 
     <!------------------------------Navigating bar-------------------------------->
     <div class="topnav" id="myTopNav">
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
         <a href="#about-me"><i class="fa fa-fw fa-user"></i> About</a>
-        <a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a>
+        <a href="projects.html"><i class="fas fa-lightbulb"></i> Projects</a>
         <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contacts</a>
         <a href="javascript:void(0);" class="toggle-btn" onclick = "toggleFunction()">
             <i class="fa fa-bars"></i>
@@ -89,7 +91,7 @@
             <p>Ping Pong Py is a 2 player game that was created with Python package called <a class="high" href="https://www.pygame.org/" target="_blank"><em><b><u>Pygame</u></b></em></a>.
                 The concept is straight forward, there will be two players each player control a paddle using W/S or UP/DOWN arrow key. 
                 The objective is to score the ball into eachother goal. If the player scored, the code will trigger a sound function to notify 
-                the player that they've scored 1 point. Whoever scored 3 point first win the game (there is an infinite round version 
+                the player that they've scored 1 point. Whoever scored 3 points first win the game (there is an infinite round version 
                 to this game as well).
             </p>
 
@@ -100,27 +102,18 @@
             <hr id="break">
             <!---------------------Project #3--------------------->
             <h3>- Multi-Page Responsive Website -</h3>
-            <p><em><b>*Still in developing process</b></em></p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
-                cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
-                odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Placeat dolorum quaerat soluta possimus magnam atque veniam nemo beatae dolore accusantium. 
-                Exercitationem praesentium est eveniet expedita ratione consequatur dolorum, corrupti aperiam!
+            <p>- A responsive webpage showcases projects and apps. The page is responsive and self-adjust the contents and layout base on the viewing device.
             </p>
 
-            <a href="" target="_blank">
+            <a href="https://github.com/ScorpyG/DarkCave" target="_blank">
             <button><b>Source Code!</b></button>
-            </a>
-
-            <a href="" target="_blank" class="right">
-                <button><b>View Page!</b></button>
             </a>
         </div>
     </section>
 
     <section class="section4">
         <!---------------------See More Button--------------------->
-        <a href="#">
+        <a href="projects.html">
             <div class="container">
                 <button style="font-size: 22px;">
                     <i class="fas fa-arrow-right"></i> <b>View More!</b>
@@ -151,9 +144,6 @@
     <!---------------------------------------------------------------------------------------------------------------------------------------------> 
     <!--footer with hyperlinked icons-->
     <footer> 
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
         <!--Media links and responsive icons-->
         <div class="media">
             <a href= "https://www.twitch.tv/scorpyg" target="_blank">
@@ -169,5 +159,6 @@
         </div>
         <p style="font-family: Bebas Neue, cursive; font-size: 16px;">&copy; 2020 <em>Justin Hoang</em> </p>
     </footer>
+<script src="script.js"></script> <!--JavaScript file-->
 </body>
 </html>

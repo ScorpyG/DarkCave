@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Press+Start+2P&family=Squada+One&display=swap" rel="stylesheet"> <!--Importing Custom Font-->
+        <link rel="stylesheet" href="style.css"> <!--Linking css file to the webpage-->
+        <link rel="icon" href="https://i.imgur.com/6ZLFKun.png"> <!--Webpage Initial-->
+        
+        <script src="https://kit.fontawesome.com/6b054b6d80.js" crossorigin="anonymous"></script> <!--Importing icons file from 'FontAwsome'-->
+
+        <title> Light Cave</title> <!--Webpage Title-->
+    </head>
+
+    <body>
+        <!-----------------------------Scoll to Top button----------------------------->
+        <button id="to-top-btn"><i class="fas fa-chevron-up"></i></button>
+        
+        <!------------------------------Navigating bar-------------------------------->
+        <div class="topnav" id="myTopNav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="projects.html" class="active"><i class="fas fa-lightbulb"></i> Projects</a>
+            <a href="javascript:void(0);" class="toggle-btn" onclick = "toggleFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>  
+
+        <!-----------------------------Projects Showcase------------------------------->
+        <section class="section2" id="projects">
+            <h1><u>Projects</u></h1>
+            <div class="prj_showcase">
+                <!------------------------Project #1----------------------->
+                <div class="card">
+                    <!-- <img src="" alt="project#1.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>GUESS THE NUMBER</h3>
+                        <p>- The program was created using <a class="high" href="https://www.python.org/about/apps/" target="_blank"><em><b><u>Python</u></b></em></a> coding language. With simple <em><b>algorithm</b></em>,
+                            <em><b>repetition</b></em> and <em><b>random number generator (RNG)</b></em> designed for the players to guess the random number within a specific  
+                            range. After every failed attemps the players will be given hints in order to obtain
+                            the correct answer. 
+                        </p>
+                        <p>- The project introduces many different elements and emphasis on the basic concepts of programming to beginners,</p>
+                    </div>
+                    <div class="card_info">
+                        <a href="https://github.com/ScorpyG/Guess-the-Number" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                    </div>
+                </div>
+                <!------------------------Project #2----------------------->
+                <div class="card">
+                    <!-- <img src="" alt="project#2.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>Ping Pong Py</h3>
+                        <p>- Ping Pong Py is a 2 player game that was created with Python package called <a class="high" href="https://www.pygame.org/" target="_blank"><em><b><u>Pygame</u></b></em></a>.
+                            The concept is straight forward, there will be two players each player control a paddle using W/S or UP/DOWN arrow key. 
+                            The objective is to score the ball into eachother goal. If the player scored, the code will trigger a sound function to notify 
+                            the player that they've scored 1 point. Best of 3 win the game. 
+                        </p>
+                    </div>
+                    <div class="card_info">
+                        <a href="https://github.com/ScorpyG/Ping-Pong-Py" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                    </div>
+                </div>
+                <!------------------------Project #3----------------------->
+                <div class="card">
+                    <!-- <img src="" alt="project#3.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>Multi-Page Responsive Website</h3>
+                        <p>- A responsive webpage showcases projects and apps. The page is responsive and self-adjust the contents and layout base on the viewing device.
+                        </p>
+                    </div>
+                    <div class="card_info">
+                        <a href="https://github.com/ScorpyG/DarkCave" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                    </div>
+                </div>
+
+                <!------------------------Project #4----------------------->
+                <div class="card">
+                    <!-- <img src="" alt="project#4.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>What time is it?</h3>
+                        <p><em><b>*Still in developing process</b></em></p>
+                        <p>- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
+                            cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
+                            odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat dolorum quaerat soluta possimus magnam atque veniam nemo beatae dolore accusantium. 
+                        </p>
+                    </div>
+                    <div class="card_info">
+                        <a href="#" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                
+                        <a href="#" target="_blank">
+                            <button><b>View Page!</b></button>
+                        </a>
+                    </div>
+                </div>
+                <!------------------------Project #5----------------------->
+                <div class="card">
+                    <!-- <img src="" alt="project#5.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>Sorting Methods</h3>
+                        <p><em><b>*Still in developing process</b></em></p>
+                        <p>- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
+                            cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
+                            odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat dolorum quaerat soluta possimus magnam atque veniam nemo beatae dolore accusantium. 
+                        </p>
+                    </div>
+                    <div class="card_info">
+                        <a href="#" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                
+                        <a href="#" target="_blank" class="right">
+                            <button><b>View Page!</b></button>
+                        </a>
+                    </div>
+                </div>
+                 <!------------------------Project #6----------------------->
+                 <div class="card">
+                    <!-- <img src="" alt="project#6.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>Project #6</h3>
+                        <p><em><b>*Still in developing process</b></em></p>
+                        <p>- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
+                            cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
+                            odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat dolorum quaerat soluta possimus magnam atque veniam nemo beatae dolore accusantium. 
+                        </p>
+                    </div>
+                    <div class="card_info">
+                        <a href="#" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                
+                        <a href="#" target="_blank" class="right">
+                            <button><b>View Page!</b></button>
+                        </a>
+                    </div>
+                </div>
+                 <!------------------------Project #7----------------------->
+                 <div class="card">
+                    <!-- <img src="" alt="project#7.gif" class="card_image"> -->
+                    <div class="card_content">
+                        <h3>Project #7</h3>
+                        <p><em><b>*Still in developing process</b></em></p>
+                        <p>- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis impedit id 
+                            cupiditate incidunt laudantium aut ipsum delectus cum exercitationem voluptatibus 
+                            odio beatae,quas tenetur molestias ea illum quia ipsam possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat dolorum quaerat soluta possimus magnam atque veniam nemo beatae dolore accusantium. 
+                        </p>
+                    </div>
+                    <div class="card_info">
+                        <a href="#" target="_blank">
+                            <button><b>Source Code!</b></button>
+                        </a>
+                
+                        <a href="#" target="_blank" class="right">
+                            <button><b>View Page!</b></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <!--------------------------------------Footer---------------------------------> 
+        <footer> 
+            <!--Media links and responsive icons-->
+            <div class="media">
+                <a href= "https://www.twitch.tv/scorpyg" target="_blank">
+                    <i class="fab fa-twitch fa-3x"></i></a>
+                <a href= "https://www.instagram.com/scorpy.g/" target="_blank">
+                    <i class="fab fa-instagram fa-3x"></i></a>
+                <a href= "https://www.linkedin.com/in/justin-hoang-56a46b175/" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i></a>
+                <a href= "https://www.facebook.com/ScorpyG/" target="_blank">
+                    <i class="fab fa-facebook-f fa-3x"></i></a>
+                <a href="https://github.com/ScorpyG" target="_blank">
+                    <i class="fab fa-github-square fa-3x"></i></a>
+            </div>
+            <p style="font-family: Bebas Neue, cursive; font-size: 16px;">&copy; 2020 <em>Justin Hoang</em> </p>
+        </footer>
+    <script src="script.js"></script> <!--JavaScript File-->
+    </body>
+</html>
