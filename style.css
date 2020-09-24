@@ -10,6 +10,7 @@ body, html {
 
 body::-webkit-scrollbar {
     width: 0.25rem;
+    height: 0;
 }
 body::-webkit-scrollbar-track {
     background: rgb(0, 0, 0);
