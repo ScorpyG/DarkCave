@@ -387,7 +387,7 @@ hr {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .topnav a {
         display: none;
     }
@@ -422,7 +422,7 @@ hr {
         width: 100%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .topnav.responsive {
         position: fixed;
     }
