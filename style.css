@@ -437,6 +437,11 @@ hr {
         text-align: left;
     }
     .prj_showcase {
+        display: grid;
+        place-items: center;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .card_content img {
+        width: 100%;
     }
 }
