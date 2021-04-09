@@ -1,3 +1,4 @@
+/* Toggle function for responsive top-nav */
 function toggleFunction() {
     var x = document.getElementById("myTopNav");
     if (x.className === "topnav") {
@@ -7,10 +8,13 @@ function toggleFunction() {
     }
 }
 
+/* Scroll detection */
 const ScrollToTop_btn = document.getElementById("to-top-btn");
 window.addEventListener("scroll", scrollFunction);
 
+/* Scroll to-top function */
 function scrollFunction() {
+    /* If the page position is > 400px add in the function */
     if (window.pageYOffset > 400) {
         if (!ScrollToTop_btn.classList.contains("btnEnter")) {
             ScrollToTop_btn.classList.remove("btnExit");
@@ -18,7 +22,8 @@ function scrollFunction() {
             ScrollToTop_btn.style.display = "block";
         }
         
-    } 
+    }
+    /* If the page postion is < 400px remove the fucntion */
     else {
         if (ScrollToTop_btn.classList.contains("btnEnter")) {
             ScrollToTop_btn.classList.remove("btnEnter");
@@ -30,8 +35,10 @@ function scrollFunction() {
     }
 }
 
+/* To-top button click detection */
 ScrollToTop_btn.addEventListener("click", toTopFunction);
 
+/* Reset the page to its original position */
 function toTopFunction() {
     window.scrollTo (0, 0);
 }
