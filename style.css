@@ -232,11 +232,11 @@ body::-webkit-scrollbar-thumb {
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 35px;
 }
 
 .card_content {
-    padding: 15px;
+    padding: 30px 30px 15px 30px;
 }
 
 .card_content img {
@@ -249,7 +249,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card_info {
-    padding: 0px 15px 15px 15px;
+    padding: 0px 30px 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -265,7 +265,7 @@ body::-webkit-scrollbar-thumb {
 
 .card {
     border-radius: 4%;
-    background: rgba(100, 100, 100, 0.1);
+    background: rgba(10, 10, 10, 0.1);
     box-shadow: 0 0 20px rgba(250, 250, 250, 0.1);
 }
 
