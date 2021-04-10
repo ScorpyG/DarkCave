@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card_content {
-    padding: 30px 30px 15px 30px;
+    padding: 0px 30px 15px 30px;
 }
 
 .card_content img {
@@ -249,7 +249,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card_info {
-    padding: 0px 30px 15px 30px;
+    padding: 0px 30px 30px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
