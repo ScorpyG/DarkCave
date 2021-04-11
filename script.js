@@ -8,8 +8,9 @@ function toggleFunction() {
     }
 }
 
-/* Scroll detection */
 const ScrollToTop_btn = document.getElementById("to-top-btn");
+
+/* Scroll detection */
 window.addEventListener("scroll", scrollFunction);
 
 /* Scroll to-top function */
