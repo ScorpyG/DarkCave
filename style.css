@@ -41,11 +41,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-text {
+    font-size: 30px;
+    text-align: center;
     color: white;
     cursor: default;
 
     -webkit-animation: moveInLeft 1s ease-out;
     animation: moveInLeft 1s ease-out;
+}
+
+.secHead::before {
+    content: "<";
+}
+
+.secHead::after {
+    content: ">";
+}
+
+.secHead::before, .secHead::after {
+    display: inline-block;
 }
 
 .hero-text button {
@@ -394,6 +408,9 @@ hr {
     .topnav a.toggle-btn {
         float: right;
         display: block;
+    }
+    .hero-text {
+        font-size: 20px;
     }
     .container {
         font-size: 15px;
